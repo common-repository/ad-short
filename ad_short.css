@@ -1,0 +1,123 @@
+.adsbygoogle {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.ad-parent {
+    margin-bottom: 10px;
+}
+
+.ad-parent.square {
+    min-width: 200px;
+    max-width: 200px;
+    height: 280px;
+    width: 100%;
+    /*background-color: #000;*/
+}
+
+.ad-parent.mobile-banner {
+    min-width: 240px;
+    height: 60px;
+    margin-left: -30px;
+}
+
+.ad-parent.large-mobile-banner {
+    width: 320px;
+    max-width: 320px;
+    height: 100px;
+    max-height: 100px;
+    margin-left: -30px;
+}
+
+.ad-parent.banner {
+    width: 670px;
+    max-width: 670px;
+    height: 150px;
+    max-height: 150px;
+    margin-left: -30px;
+}
+
+.ad-parent.three-links {
+    width: 200px;
+    max-width: 200px;
+    height: 90px;
+    max-height: 90px;
+    display: inline-block;
+    margin-right: 10px;
+    float: none;
+    clear: both;
+}
+.ad-parent.links-horizontal {
+  display: inline-block;
+  width: 468px;
+  height: 15px;
+}
+
+@media screen and (min-width: 300px) {
+    .ad-parent.large-mobile-banner, .ad-parent.banner, .ad-parent.mobile-banner, .ad-parent.links-horizontal {
+        max-width: 240px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ad-parent.square {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .ad-parent.square {
+        height: 200px;
+    }
+    .ad-parent.above-fold {
+      height: 50px;
+    }
+    .ad-parent.large-mobile-banner, .ad-parent.banner, .ad-parent.mobile-banner {
+        margin-left: -30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ad-parent.square {
+        max-width: 300px;
+        height: 250px;
+    }
+    .ad-parent.above-fold {
+      max-width: 320px;
+      height: 50px;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .ad-parent.square {
+        max-width: 336px;
+    }
+    .ad-parent.above-fold {
+      max-width: 320px;
+    }
+    .ad-parent.mobile-banner, .ad-parent.banner, .ad-parent.links-horizontal {
+        min-width: 468px;
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .ad-parent.banner {
+        max-width: 670px;
+    }
+}
+
+@media screen and (min-width: 951px) and (max-width: 1110px) {
+    .ad-parent.square {
+        max-width: 300px;
+    }
+}
+
+@media screen and (min-width: 1111px) {
+    .ad-parent.square {
+        margin-right: 10px;
+        max-width: 336px;
+        float: left;
+    }
+}
